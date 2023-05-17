@@ -1,0 +1,8 @@
+body{
+    background-image: url(../../assets/fondo2.jpg);
+    background-repeat: repeat;
+}
+
+.contenedor-home {
+    background-color: rgb(255,255,255);
+}

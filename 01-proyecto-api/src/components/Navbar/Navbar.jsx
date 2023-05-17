@@ -1,23 +1,23 @@
 import '../Navbar/Navbar.css'
+import logo from '../../assets/Logo.jpg'
+import { NavLink } from 'react-router-dom'
 
 const Navbar = () => {
   return (
     <>
       <header className='navbar1'>
         <div className='logo'>
-          <a className='nav-link' href='#'>Cin-API-lis</a>
+          <img src={logo} alt='' />
+        </div>
+        <div className='brand'>
+          <NavLink className='nav-link' to='#'>Cin-API-lis</NavLink>
         </div>
         <div className='home'>
-          <a className='nav-link' href='#'>Home</a>
-        </div>
-        <div className='searchBar'>
-          <form>
-            <input type='text' placeholder='Search' aria-label='Search' />
-            <button type='submit'>Search</button>
-          </form>
+          <NavLink className='nav-link' to='/'>Home</NavLink>
         </div>
       </header>
     </>
   )
 }
+
 export default Navbar
