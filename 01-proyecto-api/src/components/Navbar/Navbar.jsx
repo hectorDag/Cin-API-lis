@@ -14,7 +14,7 @@ const Navbar = () => {
           </div>
 
           <div className='brand'>
-            <NavLink className='nav-link'>Cin-API-lis</NavLink>
+            <h5>Cin-API-lis</h5>
           </div>
 
           <div className='home'>

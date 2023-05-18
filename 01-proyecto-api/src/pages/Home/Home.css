@@ -5,5 +5,11 @@ body{
 
 .contenedor-home {
     background-color: rgb(255,255,255);
+    width: 80%;
+    margin: 5% auto 5% auto;
+    border-radius: .25rem;
+    box-shadow: 0 14px 16px rgba(0, 0, 0, 0.2);
+    padding: 40px;
 }
+
 
