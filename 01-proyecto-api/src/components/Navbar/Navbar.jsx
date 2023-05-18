@@ -22,7 +22,7 @@ const Navbar = () => {
           </div>
 
           <div className='genres'>
-            <NavLink className='nav-link' to='/'>Genres</NavLink>
+            <NavLink className='nav-link' to='/genres'>Genres</NavLink>
           </div>
 
         </div>

@@ -19,7 +19,7 @@ const CarouselCom = () => {
           <img
             className='d-block'
             src={movies[0]}
-            alt='First slide'
+            alt='1'
           />
         </Carousel.Item>
 
@@ -27,7 +27,7 @@ const CarouselCom = () => {
           <img
             className='d-block'
             src={movies[1]}
-            alt='Second slide'
+            alt='2'
           />
 
         </Carousel.Item>
@@ -36,9 +36,66 @@ const CarouselCom = () => {
           <img
             className='d-block'
             src={movies[2]}
-            alt='Third slide'
+            alt='3'
           />
         </Carousel.Item>
+
+        <Carousel.Item>
+          <img
+            className='d-block'
+            src={movies[3]}
+            alt='4'
+          />
+        </Carousel.Item>
+
+        <Carousel.Item>
+          <img
+            className='d-block'
+            src={movies[4]}
+            alt='5'
+          />
+        </Carousel.Item>
+
+        <Carousel.Item>
+          <img
+            className='d-block'
+            src={movies[5]}
+            alt='6'
+          />
+        </Carousel.Item>
+
+        <Carousel.Item>
+          <img
+            className='d-block'
+            src={movies[6]}
+            alt='7'
+          />
+        </Carousel.Item>
+
+        <Carousel.Item>
+          <img
+            className='d-block'
+            src={movies[7]}
+            alt='8'
+          />
+        </Carousel.Item>
+
+        <Carousel.Item>
+          <img
+            className='d-block'
+            src={movies[8]}
+            alt='9'
+          />
+        </Carousel.Item>
+
+        <Carousel.Item>
+          <img
+            className='d-block'
+            src={movies[9]}
+            alt='10'
+          />
+        </Carousel.Item>
+
       </Carousel>
     </div>
   )
