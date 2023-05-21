@@ -2,3 +2,13 @@ body{
   padding: 0;
   margin: 0;
 }
+
+.contenedor-pages {
+  background-color: rgb(255, 255, 255);
+  width: 80%;
+  margin: 5% auto 5% auto;
+  border-radius: .50rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+}
+
