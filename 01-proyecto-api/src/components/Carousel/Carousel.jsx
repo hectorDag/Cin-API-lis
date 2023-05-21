@@ -15,87 +15,15 @@ const CarouselCom = () => {
   return (
     <div className='contenedor-carousel'>
       <Carousel className='carousel'>
-        <Carousel.Item>
-          <img
-            className='d-block'
-            src={movies[0]}
-            alt='1'
-          />
-        </Carousel.Item>
-
-        <Carousel.Item>
-          <img
-            className='d-block'
-            src={movies[1]}
-            alt='2'
-          />
-
-        </Carousel.Item>
-
-        <Carousel.Item>
-          <img
-            className='d-block'
-            src={movies[2]}
-            alt='3'
-          />
-        </Carousel.Item>
-
-        <Carousel.Item>
-          <img
-            className='d-block'
-            src={movies[3]}
-            alt='4'
-          />
-        </Carousel.Item>
-
-        <Carousel.Item>
-          <img
-            className='d-block'
-            src={movies[4]}
-            alt='5'
-          />
-        </Carousel.Item>
-
-        <Carousel.Item>
-          <img
-            className='d-block'
-            src={movies[5]}
-            alt='6'
-          />
-        </Carousel.Item>
-
-        <Carousel.Item>
-          <img
-            className='d-block'
-            src={movies[6]}
-            alt='7'
-          />
-        </Carousel.Item>
-
-        <Carousel.Item>
-          <img
-            className='d-block'
-            src={movies[7]}
-            alt='8'
-          />
-        </Carousel.Item>
-
-        <Carousel.Item>
-          <img
-            className='d-block'
-            src={movies[8]}
-            alt='9'
-          />
-        </Carousel.Item>
-
-        <Carousel.Item>
-          <img
-            className='d-block'
-            src={movies[9]}
-            alt='10'
-          />
-        </Carousel.Item>
-
+        {movies && movies.map((movie, index) => (
+          <Carousel.Item key={index}>
+            <img
+              className='d-block'
+              src={movie}
+              alt={index + 1}
+            />
+          </Carousel.Item>
+        ))}
       </Carousel>
     </div>
   )
