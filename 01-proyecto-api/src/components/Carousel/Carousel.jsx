@@ -9,7 +9,7 @@ const CarouselCom = () => {
     fetch('https://api.themoviedb.org/3/trending/movie/day?api_key=747b36d52c8c76c86925e8a5867acb43')
       .then(response => response.json())
       .then(data => setMovies(data.results.map(movie => `https://image.tmdb.org/t/p/w500${movie.poster_path}`)))
-      .catch(error => console.error(error))
+      .catch(error => console.log(error))
   }, [])
 
   return (

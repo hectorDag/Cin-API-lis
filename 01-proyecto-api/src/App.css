@@ -1,4 +1,6 @@
 body{
+  background-image: url(../src/assets/fondo2.jpg);
+  background-repeat: repeat;
   padding: 0;
   margin: 0;
 }

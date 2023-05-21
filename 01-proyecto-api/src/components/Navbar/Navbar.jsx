@@ -1,8 +1,11 @@
 import '../Navbar/Navbar.css'
 import logo from '../../assets/Logo.jpg'
-import { NavLink } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
+import { useState } from 'react'
 
 const Navbar = () => {
+  const [search, setSearch] = useState('')
+
   return (
     <>
       <header className='navbar1'>
@@ -28,8 +31,10 @@ const Navbar = () => {
         </div>
 
         <form className='searchBar'>
-          <input type='text' placeholder='Search' aria-label='Search' />
-          <button type='submit'>Search</button>
+          <input type='text' placeholder='Search' aria-label='Search' value={search} onChange={(event) => { setSearch(event.target.value) }} />
+          <Link to={`search/:${search}`}>
+            <button type='submit'>Search</button>
+          </Link>
         </form>
 
       </header>
