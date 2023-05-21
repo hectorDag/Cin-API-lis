@@ -17,11 +17,7 @@ const CarouselCom = () => {
       <Carousel className='carousel'>
         {movies && movies.map((movie, index) => (
           <Carousel.Item key={index}>
-            <img
-              className='d-block'
-              src={movie}
-              alt={index + 1}
-            />
+            <img className='d-block' src={movie} alt={index + 1} />
           </Carousel.Item>
         ))}
       </Carousel>

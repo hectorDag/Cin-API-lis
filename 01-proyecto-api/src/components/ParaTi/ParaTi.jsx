@@ -34,22 +34,26 @@ const ParaTi = ({ Title, API }) => {
       <h1>{Title}</h1>
 
       <Carousel className='carousel-card'>
+
         {movieChunks && movieChunks.map((movieChunk, chunkIndex) => (
           <Carousel.Item key={chunkIndex}>
             <div className='cards-wrapper'>
               {movieChunk.map((movie, index) => (
                 <Card key={index} className='individual-card' style={{ width: '20%' }}>
-                  <Card.Img variant='top' src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} />
-                  <Card.Body>
-                    <Link to={`/detail/:${movie.id}`}>
+                  <Link to={`/detail/:${movie.id}`}>
+                    <Card.Img variant='top' src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} />
+                  </Link>
+                  <div className='card-body'>
+                    <Link className='link' to={`/detail/:${movie.id}`}>
                       <p>{movie.title}</p>
                     </Link>
-                  </Card.Body>
+                  </div>
                 </Card>
               ))}
             </div>
           </Carousel.Item>
         ))}
+
       </Carousel>
     </>
   )

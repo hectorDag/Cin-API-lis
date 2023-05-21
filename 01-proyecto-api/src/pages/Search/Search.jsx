@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams, Link } from 'react-router-dom'
 import Card from 'react-bootstrap/Card'
 
 const Search = () => {
@@ -22,9 +22,13 @@ const Search = () => {
         <div key={chunkIndex} className='cards-wrapper'>
           {movieChunk.map((movie, index) => (
             <Card key={index} className='individual-card' style={{ width: '20%' }}>
-              <Card.Img variant='top' src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} />
+              <Link to={`/detail/:${movie.id}`}>
+                <Card.Img variant='top' src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} />
+              </Link>
               <Card.Body>
-                <p>{movie.title}</p>
+                <Link className='link' to={`/detail/:${movie.id}`}>
+                  <p>{movie.title}</p>
+                </Link>
               </Card.Body>
             </Card>
           ))}
