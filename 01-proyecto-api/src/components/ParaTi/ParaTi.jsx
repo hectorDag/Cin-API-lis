@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import Carousel from 'react-bootstrap/Carousel'
 import Card from 'react-bootstrap/Card'
 import '../ParaTi/ParaTi.css'
@@ -40,7 +41,9 @@ const ParaTi = ({ Title, API }) => {
                 <Card key={index} className='individual-card' style={{ width: '20%' }}>
                   <Card.Img variant='top' src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} />
                   <Card.Body>
-                    <p>{movie.title}</p>
+                    <Link to={`/detail/:${movie.id}`}>
+                      <p>{movie.title}</p>
+                    </Link>
                   </Card.Body>
                 </Card>
               ))}
