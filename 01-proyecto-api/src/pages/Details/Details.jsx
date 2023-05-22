@@ -45,6 +45,7 @@ const Details = () => {
 
           <h5>Overview</h5>
           <p>{movie.overview}</p>
+          <h5 className='h5-cast'>Cast</h5>
 
           <Carousel className='carousel-cast'>
             {castChunks && castChunks.map((castChunk, chunkIndex) => (
@@ -53,13 +54,8 @@ const Details = () => {
                   {castChunk.map((cast, index) => (
                     <Card key={index} className='individual-card' style={{ width: '20%' }}>
                       <Card.Img variant='top' src={`https://image.tmdb.org/t/p/w500${cast.profile_path}`} />
-                      <Card.Body>
-
-                        <ul>
-                          <li>{cast.original_name}</li>
-                          <li>{cast.character}</li>
-                        </ul>
-
+                      <Card.Body className='card-detail'>
+                        <p>{cast.original_name}</p>
                       </Card.Body>
                     </Card>
                   ))}

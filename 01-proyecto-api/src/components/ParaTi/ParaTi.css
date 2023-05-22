@@ -33,3 +33,24 @@ h1 {
   .link:hover {
     color: rgba(0, 0, 0, 0.8);
   }
+
+
+/*Dispositivos Moviles Pequeños*/
+
+@media (max-width: 480px) { 
+
+    .card-body{
+        display: none;
+    }
+
+}
+
+/*Dispositivo Movil*/
+
+@media (max-width: 767px) { 
+
+    .link {
+       font-size: 10px;
+      }
+
+}

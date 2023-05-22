@@ -17,3 +17,35 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+
+/*Dispositivos Moviles Pequeños*/
+
+@media (max-width: 480px) { 
+
+    .contenedor-carousel{
+        height: auto;
+    }
+
+    .carousel{
+        height: auto;
+    }
+
+    .d-block{
+        margin-bottom: 10px;
+    }
+
+}
+
+/*Dispositivo Movil Mediano*/
+
+@media (max-width: 767px) { 
+    
+    .d-block{
+        width: 50%;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+ }
